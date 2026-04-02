@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VAPOGACHI™ — Confidential Business Plan 2025</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'><rect width='1' height='1' fill='%23999'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Syne:wght@400;600;700;800&family=Syne+Mono&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #07050F; --surface: #110C1E; --surface2: #1A1230; --border: #2D1F52;
+  --violet: #7C3AED; --violet-lo: #3B1A7A; --fuchsia: #D946EF;
+  --cyan: #22D3EE; --lime: #A3E635; --text: #E5DCFF; --muted: #7C6FAA;
+  --pixel: 'Press Start 2P', monospace; --sans: 'Syne', sans-serif;
+  --mono: 'Syne Mono', monospace; --body: 'DM Sans', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); font-family: var(--body); font-size: 16px; line-height: 1.7; overflow-x: hidden; }
+body::before { content: ''; position: fixed; inset: 0; z-index: 9999; pointer-events: none; background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.06) 2px, rgba(0,0,0,0.06) 4px); }
+body::after { content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none; background-image: linear-gradient(rgba(124,58,237,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(124,58,237,0.04) 1px, transparent 1px); background-size: 24px 24px; }
+
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 52px; background: rgba(7,5,15,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.nav-logo { font-family: var(--pixel); font-size: 10px; color: var(--violet); letter-spacing: 0.05em; text-shadow: 0 0 12px var(--violet); }
+.nav-logo span { color: var(--fuchsia); }
+.nav-links { display: flex; gap: 1.5rem; list-style: none; }
+.nav-links a { font-family: var(--mono); font-size: 11px; color: var(--muted); text-decoration: none; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.2s; }
+.nav-links a:hover { color: var(--fuchsia); }
+.nav-badge { font-family: var(--mono); font-size: 10px; color: var(--violet); border: 1px solid var(--violet); padding: 2px 8px; letter-spacing: 0.1em; }
+
+.hero { position: relative; z-index: 1; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 6rem 2rem 4rem; overflow: hidden; }
+.hero-glow { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(124,58,237,0.25) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%,-55%); pointer-events: none; }
+.hero-glow2 { position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(217,70,239,0.12) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%,-45%); pointer-events: none; animation: pulse 4s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:.6;transform:translate(-50%,-45%) scale(1)} 50%{opacity:1;transform:translate(-50%,-45%) scale(1.1)} }
+.pixel-creature { position: relative; margin-bottom: 2.5rem; animation: float 3s ease-in-out infinite; }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+.pixel-grid { display: grid; gap: 2px; justify-content: center; }
+.px { width: 12px; height: 12px; border-radius: 1px; }
+.px.v { background: var(--violet); box-shadow: 0 0 6px var(--violet); }
+.px.f { background: var(--fuchsia); box-shadow: 0 0 6px var(--fuchsia); }
+.px._ { background: transparent; }
+.px.v.blink { animation: blink 2s step-end infinite; }
+@keyframes blink { 0%,100%{opacity:1} 45%,55%{opacity:0} }
+.hero-eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.3em; color: var(--fuchsia); text-transform: uppercase; margin-bottom: 1rem; opacity: 0; animation: fadeUp 0.6s 0.2s forwards; }
+.hero-title { font-family: var(--pixel); font-size: clamp(22px, 5vw, 54px); line-height: 1.4; color: #fff; text-shadow: 0 0 40px rgba(124,58,237,0.8), 0 0 80px rgba(124,58,237,0.4); margin-bottom: 0.5rem; opacity: 0; animation: fadeUp 0.6s 0.4s forwards; }
+.hero-title .tm { font-size: 0.35em; vertical-align: super; color: var(--violet); }
+.hero-sub { font-family: var(--sans); font-size: clamp(14px,2vw,20px); color: var(--muted); letter-spacing: 0.05em; margin-bottom: 3rem; opacity: 0; animation: fadeUp 0.6s 0.6s forwards; }
+@keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:none} }
+.hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; width: 100%; max-width: 680px; border: 1px solid var(--border); background: var(--border); opacity: 0; animation: fadeUp 0.6s 0.8s forwards; }
+.stat { background: var(--surface); padding: 1.25rem 1.5rem; text-align: center; }
+.stat-label { font-family: var(--mono); font-size: 9px; letter-spacing: 0.2em; color: var(--violet); text-transform: uppercase; display: block; margin-bottom: 0.4rem; }
+.stat-val { font-family: var(--sans); font-size: 15px; font-weight: 700; color: var(--text); }
+.scroll-hint { position: absolute; bottom: 2rem; font-family: var(--mono); font-size: 9px; color: var(--muted); letter-spacing: 0.2em; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.scroll-dot { width: 6px; height: 20px; border: 1px solid var(--border); border-radius: 3px; position: relative; overflow: hidden; }
+.scroll-dot::after { content: ''; position: absolute; top: 2px; left: 50%; transform: translateX(-50%); width: 2px; height: 6px; background: var(--violet); border-radius: 1px; animation: scrollDot 1.5s ease-in-out infinite; }
+@keyframes scrollDot { 0%{top:2px;opacity:1} 100%{top:11px;opacity:0} }
+
+.container { max-width: 900px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 1; }
+section { padding: 5rem 0; border-top: 1px solid var(--border); }
+.section-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 2.5rem; }
+.section-num { font-family: var(--pixel); font-size: 10px; color: var(--violet); opacity: 0.5; flex-shrink: 0; }
+.section-title { font-family: var(--sans); font-size: clamp(22px,3.5vw,32px); font-weight: 800; color: #fff; letter-spacing: -0.02em; line-height: 1; }
+.section-title .accent { color: var(--fuchsia); }
+.callout { border-left: 3px solid var(--fuchsia); background: linear-gradient(90deg, rgba(217,70,239,0.08), transparent); padding: 1.25rem 1.5rem; margin: 1.75rem 0; font-style: italic; color: var(--text); font-size: 15px; line-height: 1.7; }
+.callout-icon { color: var(--fuchsia); margin-right: 0.5rem; font-style: normal; }
+.lead { font-size: 17px; line-height: 1.8; color: var(--text); margin-bottom: 1.25rem; }
+p { color: rgba(229,220,255,0.8); margin-bottom: 1rem; font-size: 15px; }
+.subsection { margin: 2.5rem 0 1rem; }
+.sub-title { font-family: var(--sans); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--cyan); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+.sub-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--cyan), transparent); opacity: 0.3; }
+ul.styled { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin: 1rem 0; }
+ul.styled li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 15px; color: rgba(229,220,255,0.85); padding: 0.5rem 0.75rem; border-left: 2px solid transparent; transition: border-color 0.2s, background 0.2s; }
+ul.styled li:hover { border-left-color: var(--violet); background: rgba(124,58,237,0.06); }
+ul.styled li::before { content: '▸'; color: var(--violet); font-size: 12px; margin-top: 3px; flex-shrink: 0; }
+
+.table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+thead tr { background: var(--surface2); border-top: 2px solid var(--violet); }
+thead th { font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--violet); padding: 0.85rem 1rem; text-align: left; font-weight: 400; }
+tbody tr { border-bottom: 1px solid rgba(45,31,82,0.6); transition: background 0.15s; }
+tbody tr:hover { background: rgba(124,58,237,0.06); }
+tbody td { padding: 0.8rem 1rem; color: rgba(229,220,255,0.85); vertical-align: top; }
+tbody td:first-child { color: var(--text); font-weight: 500; }
+.highlight-col { background: rgba(124,58,237,0.1) !important; color: var(--violet) !important; font-weight: 700 !important; }
+.check { color: var(--lime); } .cross { color: var(--muted); } .hi { color: var(--cyan); font-weight: 600; }
+
+.brand-cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 1px; margin: 1.5rem 0; background: var(--border); }
+.brand-card { background: var(--surface); padding: 1.75rem; transition: background 0.2s; position: relative; overflow: hidden; }
+.brand-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; }
+.brand-card:nth-child(1)::before { background: var(--violet); }
+.brand-card:nth-child(2)::before { background: var(--fuchsia); }
+.brand-card:nth-child(3)::before { background: var(--cyan); }
+.brand-card:hover { background: var(--surface2); }
+.brand-name { font-family: var(--pixel); font-size: 9px; margin-bottom: 0.6rem; line-height: 1.8; }
+.brand-card:nth-child(1) .brand-name { color: var(--violet); text-shadow: 0 0 10px var(--violet); }
+.brand-card:nth-child(2) .brand-name { color: var(--fuchsia); text-shadow: 0 0 10px var(--fuchsia); }
+.brand-card:nth-child(3) .brand-name { color: var(--cyan); text-shadow: 0 0 10px var(--cyan); }
+.brand-tag { font-family: var(--mono); font-size: 11px; color: var(--muted); font-style: italic; margin-bottom: 1rem; display: block; }
+.brand-meta { font-size: 13px; color: rgba(229,220,255,0.7); line-height: 1.6; }
+.brand-meta span { color: var(--text); }
+
+.pet-stages { display: flex; flex-direction: column; gap: 1px; margin: 1.5rem 0; }
+.pet-stage { display: flex; align-items: flex-start; gap: 1.25rem; background: var(--surface); padding: 1rem 1.25rem; border-left: 3px solid transparent; transition: all 0.2s; }
+.pet-stage:hover { border-left-color: var(--violet); background: var(--surface2); }
+.stage-icon { font-size: 22px; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+.stage-name { font-family: var(--mono); font-size: 11px; color: var(--violet); letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+.stage-desc { font-size: 14px; color: rgba(229,220,255,0.75); }
+
+.flavor-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); margin: 1.5rem 0; }
+.flavor-card { background: var(--surface); padding: 1.25rem; text-align: center; transition: background 0.2s; }
+.flavor-card:hover { background: var(--surface2); }
+.flavor-emoji { font-size: 24px; display: block; margin-bottom: 0.5rem; }
+.flavor-name { font-family: var(--mono); font-size: 10px; color: var(--violet); letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+.flavor-pet { font-size: 13px; color: var(--text); margin-bottom: 0.2rem; }
+.flavor-color { font-size: 11px; color: var(--muted); }
+
+.revenue-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 1px; background: var(--border); margin: 1.5rem 0; }
+.rev-card { background: var(--surface); padding: 1.25rem; position: relative; overflow: hidden; transition: background 0.2s; }
+.rev-card:hover { background: var(--surface2); }
+.rev-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--violet), var(--fuchsia)); transform: scaleX(0); transition: transform 0.3s; transform-origin: left; }
+.rev-card:hover::after { transform: scaleX(1); }
+.rev-stream { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.5rem; }
+.rev-margin { font-family: var(--pixel); font-size: 13px; color: var(--lime); margin-bottom: 0.5rem; line-height: 1.6; }
+.rev-note { font-size: 12px; color: rgba(229,220,255,0.6); line-height: 1.5; }
+
+.phases { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; margin: 1.5rem 0; background: var(--border); }
+.phase { background: var(--surface); padding: 1.5rem; position: relative; }
+.phase-num { font-family: var(--pixel); font-size: 28px; color: var(--surface2); position: absolute; top: 1rem; right: 1rem; line-height: 1; }
+.phase-title { font-family: var(--sans); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; margin-top: 1.5rem; }
+.phase:nth-child(1) .phase-title { color: var(--violet); }
+.phase:nth-child(2) .phase-title { color: var(--fuchsia); }
+.phase:nth-child(3) .phase-title { color: var(--cyan); }
+.phase-period { font-family: var(--mono); font-size: 10px; color: var(--muted); margin-bottom: 1rem; letter-spacing: 0.1em; }
+.phase ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.phase ul li { font-size: 13px; color: rgba(229,220,255,0.75); padding-left: 1rem; position: relative; }
+.phase ul li::before { content: '—'; position: absolute; left: 0; color: var(--muted); }
+
+.risks { display: flex; flex-direction: column; gap: 1px; }
+.risk { display: grid; grid-template-columns: 180px 1fr; background: var(--surface); border-left: 3px solid var(--violet-lo); transition: all 0.2s; }
+.risk:hover { border-left-color: var(--fuchsia); background: var(--surface2); }
+.risk-label { padding: 1rem 1.25rem; font-family: var(--mono); font-size: 11px; color: var(--fuchsia); letter-spacing: 0.05em; border-right: 1px solid var(--border); display: flex; align-items: center; }
+.risk-desc { padding: 1rem 1.25rem; font-size: 14px; color: rgba(229,220,255,0.8); }
+
+.fund-total { font-family: var(--pixel); font-size: clamp(24px,5vw,48px); color: #fff; text-shadow: 0 0 40px rgba(124,58,237,0.9); text-align: center; margin: 2rem 0 0.5rem; line-height: 1.4; }
+.fund-label { text-align: center; font-family: var(--mono); font-size: 11px; color: var(--violet); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 2rem; }
+.fund-bars { display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0; }
+.fund-bar { display: grid; grid-template-columns: 220px 1fr 70px; align-items: center; gap: 1rem; }
+.fund-name { font-size: 13px; color: rgba(229,220,255,0.8); }
+.fund-track { height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden; }
+.fund-fill { height: 100%; border-radius: 3px; transition: width 1.5s cubic-bezier(0.4,0,0.2,1); width: 0; }
+.fund-fill.a { background: linear-gradient(90deg, var(--violet), var(--fuchsia)); }
+.fund-fill.b { background: linear-gradient(90deg, var(--fuchsia), var(--cyan)); }
+.fund-fill.c { background: linear-gradient(90deg, var(--cyan), var(--lime)); }
+.fund-fill.d { background: linear-gradient(90deg, var(--lime), var(--cyan)); }
+.fund-fill.e { background: var(--muted); }
+.fund-pct { font-family: var(--mono); font-size: 12px; color: var(--violet); text-align: right; }
+
+footer { position: relative; z-index: 1; border-top: 1px solid var(--border); padding: 4rem 2rem; text-align: center; }
+.footer-logo { font-family: var(--pixel); font-size: 14px; color: var(--violet); text-shadow: 0 0 20px var(--violet); margin-bottom: 1rem; display: block; }
+.footer-tagline { font-family: var(--sans); font-size: 16px; color: var(--muted); margin-bottom: 2rem; }
+.footer-contact { font-family: var(--mono); font-size: 13px; color: var(--fuchsia); letter-spacing: 0.1em; }
+.footer-legal { margin-top: 2rem; font-size: 11px; color: rgba(124,111,170,0.5); font-family: var(--mono); letter-spacing: 0.05em; }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+@media(max-width:640px) {
+  .phases { grid-template-columns: 1fr; }
+  .flavor-grid { grid-template-columns: repeat(2,1fr); }
+  .risk { grid-template-columns: 1fr; }
+  .risk-label { border-right: none; border-bottom: 1px solid var(--border); }
+  .fund-bar { grid-template-columns: 1fr; gap: 0.4rem; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">VAPOG<span>ACHI</span>™</div>
+  <ul class="nav-links">
+    <li><a href="#concept">Concept</a></li>
+    <li><a href="#brand">Brand</a></li>
+    <li><a href="#product">Product</a></li>
+    <li><a href="#revenue">Revenue</a></li>
+    <li><a href="#gtm">GTM</a></li>
+    <li><a href="#funding">Funding</a></li>
+  </ul>
+  <div class="nav-badge">CONFIDENTIAL</div>
+</nav>
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="pixel-creature" aria-hidden="true"><div class="pixel-grid" id="creature"></div></div>
+  <div class="hero-eyebrow">Confidential Business Plan · 2025 · Seed Stage</div>
+  <h1 class="hero-title">VAPOGACHI<span class="tm">™</span></h1>
+  <p class="hero-sub">Your Little Cloud Companion</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-label">Category</span><span class="stat-val">Vape / Consumer Electronics</span></div>
+    <div class="stat"><span class="stat-label">Stage</span><span class="stat-val">Seed / Pre-Revenue</span></div>
+    <div class="stat"><span class="stat-label">Target Raise</span><span class="stat-val">$2,000,000</span></div>
+  </div>
+  <div class="scroll-hint">SCROLL<div class="scroll-dot"></div></div>
+</section>
+
+<div class="container">
+
+<section id="summary">
+  <div class="section-header reveal"><span class="section-num">01</span><h2 class="section-title">Executive <span class="accent">Summary</span></h2></div>
+  <p class="lead reveal">Vapogachi is a first-of-its-kind vape device that fuses a gamified digital pet with premium, refillable hardware. A pixel companion lives on the device's OLED screen — hatching, evolving, and reacting to usage patterns, battery state, and time of day.</p>
+  <p class="reveal">The global vape market exceeded $22B in 2024 and keeps growing — but the category has been gutted by cheap disposables. Vapogachi carves out a new premium lifestyle segment by fusing nostalgia, gamification, and sustainable hardware into a product people <em>show off</em> rather than hide.</p>
+  <div class="callout reveal"><span class="callout-icon">💡</span>The device is not just a vape — it is a collectible companion that evolves over time, drives subscription pod revenue, and generates organic social shareability no competitor can match.</div>
+</section>
+
+<section id="concept">
+  <div class="section-header reveal"><span class="section-num">02</span><h2 class="section-title">The <span class="accent">Concept</span></h2></div>
+  <p class="lead reveal">The Tamagotchi sold over 82 million units worldwide by creating genuine emotional attachment to a digital creature. That psychological hook has never been applied to the vape category. Vapogachi is the first to do so.</p>
+  <div class="subsection reveal">
+    <div class="sub-title">Core Mechanic</div>
+    <ul class="styled">
+      <li>OLED or e-ink screen embedded in the device body — the pet lives here</li>
+      <li>Pixel companion hatches on first puff and evolves based on usage behavior</li>
+      <li>Pet reacts to puff count, time between sessions, and time of day</li>
+      <li>Pet gets "sick" if battery dies or device is neglected too long</li>
+      <li>Companion app syncs pet state, tracks streaks, enables deep customization</li>
+      <li>Haptic feedback when your pet "needs attention" — drives mid-day engagement</li>
+    </ul>
+  </div>
+  <div class="callout reveal"><span class="callout-icon">🐣</span>This creates genuine emotional investment. Users become attached to their pet — and that attachment drives retention, pod subscriptions, and daily app engagement that no competitor can replicate.</div>
+</section>
+
+<section id="brand">
+  <div class="section-header reveal"><span class="section-num">03</span><h2 class="section-title">Brand <span class="accent">Identity</span></h2></div>
+  <p class="reveal">Three brand expressions, one platform. The hardware and pet mechanic are identical — the aesthetic wrapper targets a distinct consumer segment in each case.</p>
+  <div class="brand-cards reveal">
+    <div class="brand-card">
+      <div class="brand-name">VAPOGACHI™</div>
+      <span class="brand-tag">"Your little cloud companion"</span>
+      <div class="brand-meta"><span>Aesthetic:</span> Pastel / Y2K / Retro pixel<br><span>Target:</span> Millennial / older Gen Z<br><span>Tone:</span> Nostalgic, ironic, collectible</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">PUFFPET™</div>
+      <span class="brand-tag">"Feed it. Breathe it. Grow it."</span>
+      <div class="brand-meta"><span>Aesthetic:</span> Meme-forward / mascot-driven<br><span>Target:</span> Gen Z / TikTok native<br><span>Tone:</span> Chaotic, shareable, parasocial</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">GHOST.pet</div>
+      <span class="brand-tag">"Haunt your habits."</span>
+      <div class="brand-meta"><span>Aesthetic:</span> Alt / dark / streetwear<br><span>Target:</span> Goth + streetwear crowd<br><span>Tone:</span> Enigmatic, premium, collector</div>
+    </div>
+  </div>
+</section>
+
+<section id="product">
+  <div class="section-header reveal"><span class="section-num">04</span><h2 class="section-title">Product <span class="accent">Line</span></h2></div>
+  <div class="subsection reveal">
+    <div class="sub-title">Core Device</div>
+    <ul class="styled">
+      <li>OLED or e-ink screen on the device body — pixel pet lives here</li>
+      <li>USB-C rechargeable with magnetic charging dock</li>
+      <li>Refillable pod system — not disposable (sustainability + margin premium)</li>
+      <li>Haptic feedback when pet "needs attention"</li>
+      <li>4–6 colorways per season, limited drops to drive hype cycles</li>
+      <li>Retail price: <strong>$45–65</strong> per unit</li>
+    </ul>
+  </div>
+  <div class="subsection reveal">
+    <div class="sub-title">Pet Progression</div>
+    <div class="pet-stages">
+      <div class="pet-stage"><div class="stage-icon">🥚</div><div><div class="stage-name">EGG</div><div class="stage-desc">Hatches on first puff. 24-hour incubation period builds anticipation.</div></div></div>
+      <div class="pet-stage"><div class="stage-icon">🐣</div><div><div class="stage-name">HATCHLING</div><div class="stage-desc">Baby creature. Reacts with animation to every single puff.</div></div></div>
+      <div class="pet-stage"><div class="stage-icon">🐾</div><div><div class="stage-name">TEEN</div><div class="stage-desc">Evolves at day 7. Path branches — Light, Medium, or Heavy user evolutions.</div></div></div>
+      <div class="pet-stage"><div class="stage-icon">✨</div><div><div class="stage-name">ADULT</div><div class="stage-desc">Fully evolved at day 30. Unique appearance per usage path — never identical.</div></div></div>
+      <div class="pet-stage"><div class="stage-icon">💀</div><div><div class="stage-name">GRAVEYARD</div><div class="stage-desc">Neglected pets archived as in-app collectibles — loss aversion drives re-engagement.</div></div></div>
+    </div>
+  </div>
+  <div class="subsection reveal">
+    <div class="sub-title">Flavor × Pet Pairings</div>
+    <p>Each pod ships with a matching limited pet skin — instant collectibility and cross-promotional marketing.</p>
+    <div class="flavor-grid">
+      <div class="flavor-card"><span class="flavor-emoji">🐸</span><div class="flavor-name">WATERMELON FROST</div><div class="flavor-pet">Frog Companion</div><div class="flavor-color">Green + White</div></div>
+      <div class="flavor-card"><span class="flavor-emoji">🐕</span><div class="flavor-name">MANGO TANGO</div><div class="flavor-pet">Shiba Inu</div><div class="flavor-color">Orange + Cream</div></div>
+      <div class="flavor-card"><span class="flavor-emoji">👻</span><div class="flavor-name">BLUEBERRY HAZE</div><div class="flavor-pet">Ghost</div><div class="flavor-color">Indigo + Violet</div></div>
+      <div class="flavor-card"><span class="flavor-emoji">🦎</span><div class="flavor-name">PEACH CREAM</div><div class="flavor-pet">Axolotl</div><div class="flavor-color">Peach + Pink</div></div>
+      <div class="flavor-card"><span class="flavor-emoji">🐧</span><div class="flavor-name">MINT ZERO</div><div class="flavor-pet">Penguin</div><div class="flavor-color">White + Mint</div></div>
+      <div class="flavor-card"><span class="flavor-emoji">🌸</span><div class="flavor-name">LYCHEE ICE</div><div class="flavor-pet">Bunny</div><div class="flavor-color">Blush + White</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="revenue">
+  <div class="section-header reveal"><span class="section-num">05</span><h2 class="section-title">Revenue <span class="accent">Model</span></h2></div>
+  <div class="revenue-grid reveal">
+    <div class="rev-card"><div class="rev-stream">Hardware</div><div class="rev-margin">55–65%</div><div class="rev-note">$45–65 unit price. Refillable = premium positioning.</div></div>
+    <div class="rev-card"><div class="rev-stream">Pod Subs</div><div class="rev-margin">60–70%</div><div class="rev-note">$20–35/mo subscription. Core recurring revenue.</div></div>
+    <div class="rev-card"><div class="rev-stream">App IAP</div><div class="rev-margin">~90%</div><div class="rev-note">Pet skins, backgrounds, accessories.</div></div>
+    <div class="rev-card"><div class="rev-stream">Drops</div><div class="rev-margin">70%+</div><div class="rev-note">Limited collabs with pixel artists. Hype-driven.</div></div>
+    <div class="rev-card"><div class="rev-stream">Merch</div><div class="rev-margin">50–60%</div><div class="rev-note">Pins, shirts, sticker packs. Brand flywheel.</div></div>
+  </div>
+  <div class="subsection reveal">
+    <div class="sub-title">Competitive Landscape</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Feature</th><th>Vapogachi</th><th>Elf Bar</th><th>Juul</th><th>Lost Mary</th></tr></thead>
+        <tbody>
+          <tr><td>Pet / Screen</td><td class="highlight-col"><span class="check">✓ Yes</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
+          <tr><td>Refillable</td><td class="highlight-col"><span class="check">✓ Yes</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
+          <tr><td>Companion App</td><td class="highlight-col"><span class="check">✓ Deep</span></td><td><span class="cross">✗</span></td><td>Basic</td><td><span class="cross">✗</span></td></tr>
+          <tr><td>Collectible Drops</td><td class="highlight-col"><span class="check">✓ Core</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td>Limited</td></tr>
+          <tr><td>Pod Subscription</td><td class="highlight-col"><span class="check">✓ Yes</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
+          <tr><td>Viral Potential</td><td class="highlight-col hi">Very High</td><td>Low</td><td>Low</td><td>Medium</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="gtm">
+  <div class="section-header reveal"><span class="section-num">06</span><h2 class="section-title">Go-To-<span class="accent">Market</span></h2></div>
+  <div class="phases reveal">
+    <div class="phase">
+      <div class="phase-num">01</div>
+      <div class="phase-title">Hype Build</div>
+      <div class="phase-period">Months 1–3</div>
+      <ul><li>TikTok / IG: "your vape has feelings"</li><li>Waitlist + referral loop</li><li>50–100 micro-influencer seeds</li><li>Pixel artist partnership drops</li></ul>
+    </div>
+    <div class="phase">
+      <div class="phase-num">02</div>
+      <div class="phase-title">DTC Launch</div>
+      <div class="phase-period">Months 4–6</div>
+      <ul><li>DTC only — max margin + data</li><li>3 colorways + 6 pod flavors</li><li>Tech + lifestyle press push</li><li>App live Day 1 with leaderboard</li></ul>
+    </div>
+    <div class="phase">
+      <div class="phase-num">03</div>
+      <div class="phase-title">Retail</div>
+      <div class="phase-period">Month 7+</div>
+      <ul><li>Vape shops + boutiques</li><li>Streetwear lifestyle doors</li><li>Spencer's / Hot Topic</li><li>Convenience chains (Yr 2)</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="risks">
+  <div class="section-header reveal"><span class="section-num">07</span><h2 class="section-title">Risks &amp; <span class="accent">Mitigations</span></h2></div>
+  <div class="risks reveal">
+    <div class="risk"><div class="risk-label">Regulatory</div><div class="risk-desc">Launch in UK/EU first under established TRPR rules. Build PMTA dossier in parallel for US market entry.</div></div>
+    <div class="risk"><div class="risk-label">Screen Durability</div><div class="risk-desc">OLED for visual quality; e-ink as ruggedized alternative. Gorilla glass overlay standard on all units.</div></div>
+    <div class="risk"><div class="risk-label">Novelty Fatigue</div><div class="risk-desc">Deep progression tree + seasonal content drops + collab pets sustain engagement beyond the initial hook.</div></div>
+    <div class="risk"><div class="risk-label">Age Verification</div><div class="risk-desc">Robust AV at DTC checkout. Strict retail partner AV requirements baked into all distributor contracts.</div></div>
+    <div class="risk"><div class="risk-label">Counterfeit</div><div class="risk-desc">NFC chip in every device enables in-app authenticity check. Holographic watermarks on all packaging.</div></div>
+  </div>
+</section>
+
+<section id="funding">
+  <div class="section-header reveal"><span class="section-num">08</span><h2 class="section-title">Funding <span class="accent">Ask</span></h2></div>
+  <div class="fund-total reveal">$2,000,000</div>
+  <div class="fund-label reveal">Seed Round · Equity · 2025</div>
+  <div class="callout reveal"><span class="callout-icon">💰</span>Seeking $2M seed to bring the first 5,000-unit production run to market and ship the Vapogachi companion app to v1.0 across iOS and Android.</div>
+  <div class="fund-bars reveal" id="fundBars">
+    <div class="fund-bar"><div class="fund-name">Hardware R&amp;D + Production Run</div><div class="fund-track"><div class="fund-fill a" data-pct="40"></div></div><div class="fund-pct">40%</div></div>
+    <div class="fund-bar"><div class="fund-name">Companion App (iOS + Android)</div><div class="fund-track"><div class="fund-fill b" data-pct="20"></div></div><div class="fund-pct">20%</div></div>
+    <div class="fund-bar"><div class="fund-name">Marketing &amp; Influencer Launch</div><div class="fund-track"><div class="fund-fill c" data-pct="17.5"></div></div><div class="fund-pct">17.5%</div></div>
+    <div class="fund-bar"><div class="fund-name">Regulatory Compliance (UK/EU)</div><div class="fund-track"><div class="fund-fill d" data-pct="10"></div></div><div class="fund-pct">10%</div></div>
+    <div class="fund-bar"><div class="fund-name">Operations &amp; Working Capital</div><div class="fund-track"><div class="fund-fill e" data-pct="12.5"></div></div><div class="fund-pct">12.5%</div></div>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <span class="footer-logo">VAPOGACHI™</span>
+  <div class="footer-tagline">Your Little Cloud Companion</div>
+  <div class="footer-contact">hello@vapogachi.co &nbsp;·&nbsp; vapogachi.co</div>
+  <div class="footer-legal">© 2025 Vapogachi Inc. All rights reserved. Confidential — intended solely for the named recipient.</div>
+</footer>
+
+<script>
+(function() {
+  const map = [
+    '_v___v_______v___v_',
+    '__vvv_________vvv__',
+    '___vvvvvvvvvvvvv___',
+    '__vvffvvvvvvffvvv__',
+    '__vfvfvvvvvvfvfvv__',
+    '__vvvvvvvvvvvvvvv__',
+    '___vvvv___vvvvv____',
+    'vvv__vvvvvvvv__vvv_',
+    '____vv__________vv_',
+    '____v____________v_',
+  ];
+  const grid = document.getElementById('creature');
+  if (!grid) return;
+  const cols = map[0].length;
+  grid.style.gridTemplateColumns = `repeat(${cols}, 12px)`;
+  grid.style.gridTemplateRows = `repeat(${map.length}, 12px)`;
+  map.forEach((row, ri) => {
+    [...row].forEach((ch, ci) => {
+      const px = document.createElement('div');
+      px.className = 'px';
+      if (ch === 'v') { px.classList.add('v'); if (ri === 4) px.classList.add('blink'); }
+      else if (ch === 'f') px.classList.add('f');
+      else px.classList.add('_');
+      grid.appendChild(px);
+    });
+  });
+})();
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+const barObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      document.querySelectorAll('.fund-fill').forEach(f => { f.style.width = f.dataset.pct + '%'; });
+      barObs.disconnect();
+    }
+  });
+}, { threshold: 0.3 });
+const fb = document.getElementById('fundBars');
+if (fb) barObs.observe(fb);
+</script>
+</body>
+</html>
